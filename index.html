@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>jana Portfolio</title>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: #131338;">
+<div class="animated-bg"></div>
+
+<header class="plain-navbar">
+  <div class="nav-wrapper">
+    
+    <div class="menu-toggle" id="menu-toggle">
+      
+    </div>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+<section id="about" class="hero-section" style="background-color: #131338;">
+  <div class="hero-container">
+    <div class="hero-left">
+      <h1 style="color: white;">JANA</h1>
+      <h3 style="color: white;">Hello there! 👋</h3>
+      <p style="color: white;">
+        Digital Marketer & Graphic Designer specializing in Meta Ads and Google Ads, focused on helping businesses grow through result-driven digital marketing strategies. Skilled in creating high-converting ad campaigns and eye-catching creative designs that attract the right audience, generate quality leads, and increase brand visibility. Dedicated to delivering measurable business growth by combining performance marketing with impactful visual design.
+      </p>
+    </div>
+    <div class="hero-right">
+      <img src="./assets/jana-new.jpg" alt="Profile Photo" class="profile-photo" />
+    </div>
+  </div>
+</section>
+
+  <section id="education" data-aos="fade-right">
+  <h2 style="color: white; text-align: center;">Education</h2>
+  <ul class="education-list">
+    <li>
+      <strong>University:</strong> Madurai Kamaraj University<br>
+      Bachelor of Commerce,The American College | 2022 <br>
+      Graduated with a solid academic foundation in commerce, specializing in finance, accounting.
+    <li>
+      <strong>HSC:</strong> Higher Secondary Certificate (HSC)<br>
+     E.B.G Matric. Higher Secondary School | Year of Completion: 2019<br>
+      Completed HSC with a focus on Commerce
+    </li>
+    <li>
+      <strong>SSLC:</strong> Secondary School Leaving Certificate (SSLC)<br>
+     E.B.G Matric.Higher Secondary School | Year of Completion: 2017
+    </li>
+  </ul>
+</section>
+
+
+
+<section id="projects" data-aos="fade-up">
+    <h2 class="project-heading"> Projects</h2>
+
+    <!-- project content here -->
+</section>
+
+  
+
+  <div class="projects-container">
+
+    <!-- Digital Marketing -->
+    <div class="project-card" data-aos="zoom-in">
+      <h3>Digital Marketing</h3>
+      <p>Meta Ads, Google Ads, Lead Generation & Sales Campaign Projects.</p>
+      <a href="digital-marketing.html" class="view-btn">View Projects</a>
+    </div>
+
+    <!-- Graphic Design -->
+    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        
+      <h3>Graphic Design</h3>
+      <p>Logo, Posters, Book Design & Branding Works.</p>
+      <a href="graphic.html" class="view-btn">View Projects</a>
+
+      
+    </div>
+
+    <!-- UI/UX -->
+    <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+      <h3>UI/UX - Figma Design</h3>
+      <p>Website & Mobile UI designs created using Figma.</p>
+      <a href="uiux.html" class="view-btn">View Projects</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" data-aos="fade-up">
+  <h2 class="section-heading" style="color: white; text-align: center;">Skills</h2>
+  <div class="skills-logos" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+     <div class="skill-item" data-aos="zoom-in" data-aos-delay="200"><img src="./assets/meta logo" alt="Meta Ads" /><span>Meta Ads</span></div>
+    <div class="skill-item" data-aos="zoom-in" data-aos-delay="400"><img src="./assets/Googlenew 2.png" alt="Google Ads" /><span>Google Ads</span></div>
+    <div class="skill-item" data-aos="zoom-in" data-aos-delay="500"><img src="./assets/figma-new.webp" alt="Figma" /><span>Figma</span></div>
+    <div class="skill-item" data-aos="zoom-in" data-aos-delay="200"><img src="./assets/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop" /><span>Photoshop</span></div>
+    <div class="skill-item" data-aos="zoom-in" data-aos-delay="300"><img src="./assets/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator" /><span>Illustrator</span></div>
+    <div class="skill-item" data-aos="zoom-in" data-aos-delay="400"><img src="./assets/wireframe-logo-png_seeklogo-428518.png" alt="Wireframe" /><span>Wireframe</span></div>
+   
+  </div>
+</section>
+
+
+<section id="Resume" data-aos="fade-up">
+  <h2 class="section-heading" style="color:white;text-align:center;">Resume</h2>
+  <div style="text-align:center;">
+    <button class="common-button" onclick="openResume()">View Resume</button>
+  </div>
+</section>
+
+<!-- Resume Modal -->
+<div id="resumeModal" class="resume-popup">
+  <div class="resume-card">
+
+   
+      <a href="./assets/Jana resume.pdf" download></a>
+    </button>
+
+    <span class="close-btn" onclick="closeResume()">×</span>
+
+    <img src="./assets/Jana resume (5)_page-0001.jpg" class="resume-img">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</main>
+<div class="social-container">
+    <style>
+        .social-container {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            gap: 25px;               /* Space between icons */
+            padding: 20px;
+            background: transparent;
+        }
+
+        .social-container img {
+            width: 40px;             /* Uniform size */
+            height: 40px;            /* Uniform size */
+            object-fit: contain;     /* Keeps icons crisp */
+            transition: transform 0.3s ease;
+        }
+
+        .social-container a:hover img {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+    </style>
+
+<div class="social-container">
+  <a href="https://www.instagram.com/jxna__.13" class="icon-link instagram" target="_blank">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+    </svg>
+  </a>
+
+  <a href="https://wa.me/6380169870" class="icon-link whatsapp" target="_blank">
+  <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+  <a href="mailto:janajana2779@gmail.com" class="icon-link gmail">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.39l-9 6.58-9-6.58V21H1.5C.65 21 0 20.35 0 19.5v-15c0-1.17 1.26-1.88 2.21-1.19l9.79 7.16 9.79-7.16c.95-.69 2.21-.02 2.21 1.19z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.linkedin.com/in/
+jana-p-a27253395
+" class="icon-link linkedin" target="_blank">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+    </svg>
+  </a>
+</div>
+
+
+</div>
+
+<footer>
+  <p style="color: white;">&copy; 2026 JANA. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

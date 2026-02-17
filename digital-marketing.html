@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic designs · pure grid</title>
+    <style>
+        /* reset — only what's necessary: nothing else */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #131338;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+            position: relative;
+        }
+
+        /* the only container — no extra headings, badges, notes, containers */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        /* 🟦🟦 perfect square – no caption, no label, no file name, just design */
+        .grid-item {
+            aspect-ratio: 1 / 1;
+            background-color: #131338;
+            border-radius: 0;                /* clean, no container shape */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: none;               /* no extra box or container effect */
+            border: 0;                     /* pure image only */
+        }
+
+        /* image fills square without any distortion — shows entire artwork */
+        .grid-item img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;           /* full design visible, no crop, no stretch */
+            background-color: #131338;     /* soft neutral – only visible if image has transparency */
+            transition: none;              /* no hover effects, no extra ornament */
+        }
+
+        /* back button - minimal, no container feel */
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 1px solid #131338;
+            font-size: 24px;
+            font-weight: 300;
+            color: #1e293b;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            transition: all 0.1s ease;
+            z-index: 100;
+            padding: 0;
+            line-height: 1;
+        }
+        
+        .back-btn:hover {
+            background: #f8fafc;
+            border-color: #94a3b8;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+        }
+
+        /* absolutely no text, no captions, no "note-badge", no file names, no containers */
+        /* strict minimal: only images, equal squares, no extra UI */
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 0.8rem;
+            }
+            body { padding: 1rem; }
+            .back-btn {
+                top: 12px;
+                left: 12px;
+                width: 40px;
+                height: 40px;
+                font-size: 22px;
+            }
+        }
+
+        /* no decorative pseudo-elements, no headers, no footers – only .gallery-grid */
+        /* this is a silent, pure design grid */
+    </style>
+</head>
+<body>
+    <!-- 
+        ⚡⚡⚡ PURE DESIGN GRID – absolutely no containers, no letters, no badges 
+        only your works. each tile is a silent square. 
+        12 designs exactly as your original list. no extra boxes.
+    -->
+    <div class="gallery-grid">
+
+    <!-- Campaign: Physio_Leads_ -->
+    <div class="grid-item">
+        <img src="./digital-marketting  assest/physio-lead-call.png" alt="Physio Leads  Campaign">
+    </div>
+
+    <!-- Campaign: meta engagement views campaign-->
+    <div class="grid-item">
+        <img src="./digital-marketting  assest/sa construction engagement campaign.jpg" alt=" Meta engagement views campaign">
+    </div>
+
+    <!-- Campaign: traffic campain shira instute -->
+    <div class="grid-item">
+        <img src="./digital-marketting  assest/traffic campain shira instute.png" alt="traffic campain shira instute">
+    </div>
+
+   
+</div>
+
+    
+    <!-- BACK BUTTON - positioned top left, fixed, no container feel -->
+    <button onclick="history.back()" class="back-btn">←</button>
+    
+    <!-- 
+        NOTHING ELSE. 
+        no credit, no caption, no badge, no "perfect uniform grid" note,
+        no file names, no project labels, no containers, no extra boxes. 
+        only the silent grid of your designs and one back button.
+    -->
+</body>
+</html>
